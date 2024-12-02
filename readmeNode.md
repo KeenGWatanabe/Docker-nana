@@ -95,6 +95,6 @@ TERMINAL STEPS
 "stop app" $docker compose down
 
 MONGO DB 
-user: mckeenweb
+user: mckweb
 collections: test [bookings, places, users]
 
