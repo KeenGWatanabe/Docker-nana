@@ -9,6 +9,7 @@ services:
       -27017:27017
     environment:
       -MONGO_USERNAME=admin
+      ...
 
 # docker compose.yaml for docker run cmd for mongo-express:
 
@@ -51,5 +52,6 @@ file>app>$ `docker-compose -f mongo.yaml up`
 
 start at 1:34
 <<check node.js file for errors, especially in mongo references>>
+<<ln: 27 check server.js mongoUrlDocker declared but never read>>
 stopped at 1:42      
 
