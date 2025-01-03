@@ -46,6 +46,10 @@ services:
       - ME_CONFIG_MONGODB+SERVER=mongodb
 
 # command to start docker-compose (`mongo-express` has to wait for `mongo` to start b4 it can establish a connection)
+to start node app
+k:\app folder>$ `node server.js`
+open another terminal to start docker 
+k:\app folder>$ `dockerd`
 ## `docker-compose -f`<file> <filename.yaml> `up`<start>
 
 file>$ `docker-compose -f docker-compose.yaml up`  
