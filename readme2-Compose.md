@@ -48,7 +48,7 @@ services:
 # command to start docker-compose (`mongo-express` has to wait for `mongo` to start b4 it can establish a connection)
 ## `docker-compose -f`<file> <filename.yaml> `up`<start>
 
-file>app>$ `docker-compose -f mongo.yaml up`  
+file>$ `docker-compose -f docker-compose.yaml up`  
 
 start at 1:34
 <<check node.js file for errors, especially in mongo references>>

@@ -3,15 +3,18 @@ docker hub > mongo > check if mongo has an offical image to pull, copy the pull 
 
 1: login docker desktop;
 2: open new terminal
+starting docker from cmi and not docker desktop;
+install with WSL2 $ `sudo apt install docker.io`
+k:\app folder>$ `dockerd`
 k:\app folder>$ `docker pull mongo`
 *sha256:c165af1a407eefce644877bf5a59ba3d9ca762e62b4f1723c919dc08dc32f4d0*
 k:\app folder>$ `docker pull mongo-express`
 *sha256:1b23d7976f0210dbec74045c209e52fbb26d29b2e873d6c6fa3d3f0ae32c2a64*
 3: run both mongo & mongo-express containers to make mongoDB available for apps;
    connect mongo-express to mongoDB container;
- ![alt text](image.png) 
+  
  4: `docker network ls` => docker by default already provided some network;
- ![alt text](image-1.png)
+ 
  5: `docker network create [networkname];
  6: mongo run port:27017 inside a container; 
  `docker run -p 27017:27017 -d mongo` 
@@ -35,7 +38,7 @@ k:\app folder>$ `docker pull mongo-express`
  `-e ME_CONFIG_MONGODB_SERVER=mongodb \`
  `mongo-express`
 do a log in the container with this code `docker logs [containerID generated]`;
-![alt text](image-2.png)
+
 
 9: goto browser type localhost:8081 > admin > password;
 type DB name at + Create Database to create a database;
